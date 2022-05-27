@@ -1,6 +1,6 @@
 import {
     httpServer
-} from "../clients/server";
+} from "../server";
 
 export default class ProductService {
 
@@ -32,7 +32,7 @@ export default class ProductService {
             .catch(err => console.log(err));
     }
 
-    static updateProduct(product) {
+    static updateProducts(product) {
         return httpServer.put(`/products/update_product`, product)
             .then(({
                 data

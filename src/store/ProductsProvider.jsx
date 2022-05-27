@@ -1,7 +1,4 @@
-import axios from 'axios';
-import { createContext, useEffect, useState } from 'react';
-import ProductService from '../services/productService';
-
+import { createContext, useState } from 'react';
 
 export const ProductContext = createContext();
 
@@ -10,7 +7,6 @@ export default function ProductProvider({ children }) {
 
     const contextValue = {
         products,
-        product_selected,
         updateProduct: (product) => {
         },
 
