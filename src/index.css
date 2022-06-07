@@ -5,6 +5,10 @@
   --roboto_font: 'Roboto', sans-serif;
   --baloo2_font: 'Baloo 2', cursive;
   --boxshadow1: 0 0 3px 1px rgba(0,0,0,0.300);
+  --z-index-navbar: 50;
+  --z-index-order-navbar: 49;
+  
+
 }
 * {
   padding: 0;
