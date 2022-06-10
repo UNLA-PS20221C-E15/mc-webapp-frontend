@@ -27,8 +27,8 @@ export default function Navbar() {
           <img src="../logout.svg" alt="user_icon"/>
           Salir
         </button> : <button>
-        <img src="../login.svg" alt="user_icon"/>
-          Ingresa
+        <NavLink to="/login"><img src="../login.svg" alt="user_icon"/>
+          Ingresa </NavLink>
         </button>}
       </div>
 
