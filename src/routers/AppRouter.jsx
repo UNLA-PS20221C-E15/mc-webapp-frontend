@@ -8,7 +8,7 @@ import StickersPage from '../pages/StickersPage'
 import TicketsPage from '../pages/TicketsPage'
 import OrdersPageRouter from './OrdersPageRouter'
 import LoginPage from '../components/login/LoginPage'
-
+import RegisterPage from '../components/register/RegisterPage'
 export default function AppRouter() {
   return (
     <BrowserRouter>
@@ -21,6 +21,7 @@ export default function AppRouter() {
         <Route path='/orders' component={OrdersPageRouter} />
         <Route path='/offers' component={OffersPage} />
         <Route path='/login' component={LoginPage} />
+        <Route path='/register' component={RegisterPage} />
 
         {/* <Route path='/404' component={} /> */}
       </Switch>
