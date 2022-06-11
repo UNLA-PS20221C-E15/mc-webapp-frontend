@@ -2,7 +2,7 @@ import React from 'react'
 import useItems from '../../store/UseItems';
 import './Product.css'
 
-export default function Product({ img, price, name, discount, enableDiscount }) {
+export default function Product({ img, price, name, discount, enableDiscount,stock }) {
     const {addItemToCart} = useItems();
     return (
         <div className='root_product' style={{
@@ -52,7 +52,7 @@ export default function Product({ img, price, name, discount, enableDiscount }) 
             </div>
             <div className='product_box_btns_add_buy'>
                 <button>Comprar</button>
-                <button onClick={() => addItemToCart({ img, price, name, discount, enableDiscount })} >Agregar</button>
+                <button onClick={() => addItemToCart({ img, price, name, discount, enableDiscount, stock })} >Agregar</button>
             </div>
 
         </div >

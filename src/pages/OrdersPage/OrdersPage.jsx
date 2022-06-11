@@ -24,7 +24,7 @@ export default function OrdersPage({ toggleOrdersNavbar, setToggleOrdersNavBar }
       </div>
       <div className='orderspage_products_container'>
         {products && products.map((i, k) => (
-          <Product key={k} img={i.img} price={i.price} discount={i.discount} enableDiscount={i.enableDiscount} name={i.name} />
+          <Product stock={i.stock} key={k} img={i.img} price={i.price} discount={i.discount} enableDiscount={i.enableDiscount} name={i.name} />
         ))}
       </div>
 

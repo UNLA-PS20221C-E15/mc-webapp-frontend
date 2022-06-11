@@ -7,7 +7,24 @@ export default function ItemsProvider({ children }) {
 
     const contextValue = {
         shoppingCart,
-        updateItem: (item) => {
+        updateItem: (item, action) => {
+            let index = shoppingCart.findIndex((i) => i.product.name === item.product.name);
+            if (index >= 0) {
+                switch (action) {
+                    case "add":
+                        shoppingCart[index].quantity++;
+                        break;
+                    case "minus":
+                        shoppingCart[index].quantity--;
+                        break;
+                }
+                if(shoppingCart[index].quantity <= 0)
+                    shoppingCart.splice(index, 1);
+                
+                setShoppingCart([...shoppingCart]);
+                localStorage.setItem("shoppingCart", JSON.stringify([...shoppingCart]));
+
+            }
         },
 
         addItemToCart: (product) => {
@@ -32,7 +49,13 @@ export default function ItemsProvider({ children }) {
         },
 
         deleteItems: (items) => {
+
+        },
+        getTotalItems: ()=>{
+            let total = 0;
+            return shoppingCart.map((i) => total += i.quantity);
         }
+
 
     }
 
