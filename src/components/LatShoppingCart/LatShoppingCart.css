@@ -2,7 +2,8 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    z-index: 49;
+    z-index: var(--z-index-order-navbar);
+    
 }
 
 .root_latshoppingcart:first-child {
@@ -36,11 +37,18 @@
     height: 100%;
 }
 .latshoppingcart_item_container{
-    display:"flex";
+    /* display:"flex";
     flex-direction: column;
     justify-content: center;
+    align-items: center; */
+    position: relative;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1;
+    row-gap: 15px;
     align-items: center;
+    justify-items: center;
     width: 100%;
     max-width: 360px;
-    min-width: 250px;
+    min-width: 290px;
 }

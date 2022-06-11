@@ -1,22 +1,25 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Route } from 'react-router-dom';
 import { Redirect } from 'react-router-dom';
 import { Switch } from 'react-router-dom';
 import { useRouteMatch } from 'react-router-dom';
-import OffersPage from '../pages/OfferPage/OffersPage';
+import OrdersPage from '../pages/OrdersPage/OrdersPage';
 import OrdersNavBar from '../pages/OrdersPage/OrdersNavBar';
-import './OrdersPageRouter.css'
+import '../pages/OrdersPage/OrdersPage.css'
 export default function OrdersPageRouter() {
     const { url } = useRouteMatch();
-    console.log(url);
-    
+    const [toggleOrdersNavbar, setToggleOrdersNavBar] = useState();
     return (
         <div className='root_orders_navbar'>
             
-            <OrdersNavBar url={url}/>
+            <OrdersNavBar toggleOrdersNavbar={toggleOrdersNavbar} setToggleOrdersNavBar={setToggleOrdersNavBar} url={url}/>
             <Switch>
-                <Route exact path={`${url}/promociones`} component={OffersPage}/>
-                <Route exact path={`${url}/:section`} component={OffersPage}/>
+                <Route exact path={`${url}/`} >
+                    <OrdersPage toggleOrdersNavbar={toggleOrdersNavbar} setToggleOrdersNavBar={setToggleOrdersNavBar} />
+                </Route>
+                <Route exact path={`${url}/:section`} >
+                    <OrdersPage toggleOrdersNavbar={toggleOrdersNavbar} setToggleOrdersNavBar={setToggleOrdersNavBar} />
+                </Route>
                 {/* <Route path='*'>
                     <Redirect to='/404' />
                 </Route> */}

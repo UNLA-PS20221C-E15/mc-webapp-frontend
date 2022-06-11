@@ -2,23 +2,37 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 
-export default function OrdersNavBar({url}) {
-  return (
-    <div className="main_orders_navbar">
-            
-            <NavLink activeClassName="active_order_navbar" exact to={`${url}/promociones`}>Promociones</NavLink>
-            <NavLink to={`${url}/mcofertas`}>McOfertas</NavLink>
-            <NavLink to={`${url}/mccombos`}>McCombos</NavLink>
-            <NavLink to={`${url}/cajita_feliz`}>Cajita Feliz</NavLink>
-            <NavLink to={`${url}/cajita_feliz_mas_opciones`}>Cajita Feliz Mas Opciones</NavLink>
-            <NavLink to={`${url}/sandwiches_snacks`}>Sandwiches y Snacks</NavLink>           
-            <NavLink to={`${url}/postres`}>Postres</NavLink>           
-            <NavLink to={`${url}/acompañamientos`}>Acompañamientos</NavLink>           
-            <NavLink to={`${url}/desayunos_meriendas`}>Desayunos & Meriendas</NavLink>           
-            <NavLink to={`${url}/ensaladas`}>Ensaladas</NavLink>           
-            <NavLink to={`${url}/bebidas_frias_calientes`}>Bebidas frias y calientes</NavLink>           
+export default function OrdersNavBar({ url, toggleOrdersNavbar, setToggleOrdersNavBar }) {
 
-        
+
+  return (
+    <div className="main_orders_navbar" style={toggleOrdersNavbar ? {
+      transform:"translateX(0)"
+    } : {
+      transform:"translateX(-180px)"   
+    }}>
+      <div className='toggle_btn_ordersnavbar' onClick={() => setToggleOrdersNavBar(!toggleOrdersNavbar)} >
+        <img src="arrow_right.svg" alt=""  style={toggleOrdersNavbar ? {
+                transition: "0.3s",
+                transform: "rotate(0)",
+            } : {
+                transition: "0.3s", 
+                transform: "rotate(180deg)",
+            }}/>
+      </div>
+      <NavLink activeClassName="active_order_navbar" exact to={`${url}/promociones`}>Promociones</NavLink>
+      <NavLink exact to={`${url}/mcofertas`}>McOfertas</NavLink>
+      <NavLink exact to={`${url}/mccombos`}>McCombos</NavLink>
+      <NavLink exact to={`${url}/cajita_feliz`}>Cajita Feliz</NavLink>
+      <NavLink exact to={`${url}/cajita_feliz_mas_opciones`}>Cajita Feliz Mas Opciones</NavLink>
+      <NavLink exact to={`${url}/sandwiches_snacks`}>Sandwiches y Snacks</NavLink>
+      <NavLink exact to={`${url}/postres`}>Postres</NavLink>
+      <NavLink exact to={`${url}/acompañamientos`}>Acompañamientos</NavLink>
+      <NavLink exact to={`${url}/desayunos_meriendas`}>Desayunos & Meriendas</NavLink>
+      <NavLink exact to={`${url}/ensaladas`}>Ensaladas</NavLink>
+      <NavLink exact to={`${url}/bebidas_frias_calientes`}>Bebidas frias y calientes</NavLink>
+
+
     </div>
   )
 }

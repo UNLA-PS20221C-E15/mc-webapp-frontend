@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Mc Pollo XL",
+        "img": "../h.png",
+        "price": 900.0,
+        "discount": 0.20,
+        "enableDiscount":false,
+        "description": "Hamburguesa epica de 100% pollo, con queso cheddar y toda la cosa"
+    },
+    {
+        "name": "Mc Pollo XL",
+        "img": "../h.png",
+        "price": 900.0,
+        "discount": 0.20,
+        "enableDiscount":false,
+        "description": "Hamburguesa epica de 100% pollo, con queso cheddar y toda la cosa"
+    },
+    {
+        "name": "Mc Pollo XL",
+        "img": "../h.png",
+        "price": 900.0,
+        "discount": 0.20,
+        "enableDiscount":false,
+        "description": "Hamburguesa epica de 100% pollo, con queso cheddar y toda la cosa"
+    },
+    {
+        "name": "Mc Pollo XL",
+        "img": "../h.png",
+        "price": 900.0,
+        "discount": 0.20,
+        "enableDiscount":false,
+        "description": "Hamburguesa epica de 100% pollo, con queso cheddar y toda la cosa"
+    },
+    {
+        "name": "Mc Pollo XL",
+        "img": "../h.png",
+        "price": 900.0,
+        "discount": 0.20,
+        "enableDiscount":false,
+        "description": "Hamburguesa epica de 100% pollo, con queso cheddar y toda la cosa"
+    },
+    {
+        "name": "Mc Pollo XL",
+        "img": "../h.png",
+        "price": 900.0,
+        "discount": 0.20,
+        "enableDiscount":true,
+        "description": "Hamburguesa epica de 100% pollo, con queso cheddar y toda la cosa"
+    },
+    {
+        "name": "Mc Pollo XL",
+        "img": "../h.png",
+        "price": 900.0,
+        "discount": 0.20,
+        "enableDiscount":true,
+        "description": "Hamburguesa epica de 100% pollo, con queso cheddar y toda la cosa"
+    },
+    {
+        "name": "Mc Pollo XL",
+        "img": "../h.png",
+        "price": 900.0,
+        "discount": 0.10,
+        "enableDiscount":true,
+        "description": "Hamburguesa epica de 100% pollo, con queso cheddar y toda la cosa"
+    },
+    {
+        "name": "Mc Pollo XL",
+        "img": "../h.png",
+        "price": 900.0,
+        "discount": 0.20,
+        "enableDiscount":false,
+        "description": "Hamburguesa epica de 100% pollo, con queso cheddar y toda la cosa"
+    }
+]

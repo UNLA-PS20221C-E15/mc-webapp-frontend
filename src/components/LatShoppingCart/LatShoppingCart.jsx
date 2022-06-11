@@ -1,10 +1,14 @@
 import React, { useState } from 'react'
 import './LatShoppingCart.css'
 import ItemOnShoppingCart from '../ItemOnShoppingCart/ItemOnShoppingCart'
+import useItems from '../../store/UseItems';
+
 
 
 export default function LatShoppingCart() {
-    const [toggle, setToggle] = useState(false);
+    const [toggle, setToggle] = useState(true);
+    const {shoppingCart} = useItems();
+   
     return (
         <div className='root_latshoppingcart' style={toggle ? {
             transition:"0.4s",
@@ -15,9 +19,9 @@ export default function LatShoppingCart() {
         }}>
             <div >
                 <div className='latshoppingcart_item_container'>
-                    <ItemOnShoppingCart />
-                    <ItemOnShoppingCart />
-                    <ItemOnShoppingCart />
+                    {shoppingCart && shoppingCart.map((i,k) => (
+                        <ItemOnShoppingCart item={i} key={k}/>
+                    ))}
                 </div>
                 <div>
 

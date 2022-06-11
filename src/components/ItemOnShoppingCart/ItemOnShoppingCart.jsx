@@ -1,7 +1,9 @@
 import React from 'react'
+import useItems from '../../store/UseItems';
 import './ItemOnShoppingCart.css'
 
-export default function ItemOnShoppingCart() {
+export default function ItemOnShoppingCart({item}) {
+    const {deleteItemFromCart} = useItems();
     return (
         <div className='root_itemOnShoppingCart'>
             <div style={{
@@ -13,16 +15,17 @@ export default function ItemOnShoppingCart() {
             }}>
 
             </div>
-            <div>
-                <p>Big Mac</p>
-                <div>
-                    <p>+</p>
-                    <p>1</p>
-                    <p>-</p>    
+            <div  className='shoppingcart_quantity_name_box'>
+                <p>{item && item.product.name}</p>
+                <div className='shoppingcart_quantity_box' >
+                    <div>+</div>
+                    <div>{item && item.quantity}</div>
+                    <div>-</div>    
                 </div>
             </div>
-            <div>
-
+            <div className='shoppingcart_box_delete_total'>
+                <div>${item && item.product.price * item.quantity}</div>
+                <div onClick={() => deleteItemFromCart(item.product.name)}>Quitar</div>
             </div>
         </div>
     )
