@@ -7,7 +7,7 @@ export default function ItemOnShoppingCart({ item }) {
     return (
         <div className='root_itemOnShoppingCart'>
             <div style={{
-                backgroundImage: "url('../h.png')",
+                backgroundImage: `url('../${item.product.img}')`,
                 backgroundSize: "100%",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",

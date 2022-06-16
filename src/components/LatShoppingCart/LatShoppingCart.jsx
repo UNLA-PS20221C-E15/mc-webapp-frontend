@@ -24,7 +24,7 @@ export default function LatShoppingCart() {
                     ))}
                 </div>
                 <div className='latshoppingcart_box_detail'>
-                        <button>Comprar</button>
+                        {/* <button>Comprar</button> */}
                         <div>
                             <p>Total</p>
                             <p>${getTotal()}</p>
@@ -42,7 +42,7 @@ export default function LatShoppingCart() {
             // }}
             >
                 <img src="shopping_bag.png" alt="" />
-                {getTotalItems()[0] > 0 && <div style={{
+                {/* {getTotalItems()[0] > 0 && <div style={{
                     position:"absolute",
                     top:0,
                     right:0,
@@ -52,7 +52,7 @@ export default function LatShoppingCart() {
                     color:"white",
                     fontSize:"1px"
 
-                }}>{getTotalItems()[0]}</div> }
+                }}>{getTotalItems()[0]}</div> } */}
             </div>
         </div>
     )

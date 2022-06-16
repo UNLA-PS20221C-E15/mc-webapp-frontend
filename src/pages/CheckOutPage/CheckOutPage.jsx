@@ -15,7 +15,7 @@ export default function CheckOutPage() {
                     ))}
                 </div>
                 <div className='checkoutpage_box_detail'>
-                    <button>Comprar</button>
+                    {/* <button>Comprar</button> */}
                     <div>
                         <p>Total</p>
                         <p>${getTotal()}</p>

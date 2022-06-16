@@ -47,7 +47,7 @@ export default function SingleViewProduct() {
                     <div className='calories'>{product_selected && product_selected.calories}</div>
                     <div  className='description'>{product_selected && product_selected.description}</div>
                     <div className='single_view_btns'>
-                        <NavLink to="/" >Comprar</NavLink>
+                        {/* <NavLink to="/" >Comprar</NavLink> */}
                         <button onClick={() => addItemToCart(product_selected)}>Agregar</button>
                     </div>
 
