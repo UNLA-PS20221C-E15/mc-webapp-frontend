@@ -1,0 +1,110 @@
+.root_product {
+    width: 100%;
+    height: 100%;
+    min-width: 180px;
+    max-width: 120px;
+    min-height: 180px;
+    max-height: 120px;
+    box-sizing: border-box;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.637);
+    display: grid;
+    grid-template-rows: 70% 30%;
+    position: relative;
+    cursor: pointer;
+
+
+}
+
+.root_product:hover .product_box_btns_add_buy {
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.product_box_btns_add_buy {
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.product_box_price_and_name {
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    animation: inout-details 1s ease-in-out;
+}
+
+.product_box_price_and_name p:nth-child(1) {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.product_oldprice {
+    text-decoration: line-through;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-style: italic;
+    font-size: 15px;
+    /* color: rgb(255, 136, 0); */
+}
+
+.product_box_btns_add_buy {
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.product_box_btns_add_buy button {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 5px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.349);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.product_box_btns_add_buy a {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 5px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.349);
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+}
+.product_box_btns_add_buy a {
+    background-color: rgb(159, 255, 159);
+
+}
+
+.product_box_btns_add_buy a:hover {
+    background-color: rgb(109, 255, 109);
+}
+
+.product_box_btns_add_buy button {
+    background-color: rgb(234, 255, 159);
+
+}
+
+.product_box_btns_add_buy button:hover {
+    background-color: rgb(219, 255, 88);
+}
+

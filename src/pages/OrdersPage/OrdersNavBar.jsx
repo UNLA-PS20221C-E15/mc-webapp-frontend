@@ -1,24 +1,38 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { a } from 'react-router-dom'
 
 
-export default function OrdersNavBar({url}) {
+export default function OrdersNavBar({ url, toggleOrdersNavbar, setToggleOrdersNavBar, setSection }) {
+
+
   return (
-    <div className="main_orders_navbar">
-            
-            <NavLink activeClassName="active_order_navbar" exact to={`${url}/promociones`}>Promociones</NavLink>
-            <NavLink to={`${url}/mcofertas`}>McOfertas</NavLink>
-            <NavLink to={`${url}/mccombos`}>McCombos</NavLink>
-            <NavLink to={`${url}/cajita_feliz`}>Cajita Feliz</NavLink>
-            <NavLink to={`${url}/cajita_feliz_mas_opciones`}>Cajita Feliz Mas Opciones</NavLink>
-            <NavLink to={`${url}/sandwiches_snacks`}>Sandwiches y Snacks</NavLink>           
-            <NavLink to={`${url}/postres`}>Postres</NavLink>           
-            <NavLink to={`${url}/acompañamientos`}>Acompañamientos</NavLink>           
-            <NavLink to={`${url}/desayunos_meriendas`}>Desayunos & Meriendas</NavLink>           
-            <NavLink to={`${url}/ensaladas`}>Ensaladas</NavLink>           
-            <NavLink to={`${url}/bebidas_frias_calientes`}>Bebidas frias y calientes</NavLink>           
+    <div className="main_orders_navbar" style={toggleOrdersNavbar ? {
+      transform:"translateX(0)"
+    } : {
+      transform:"translateX(-180px)"   
+    }}>
+      <div className='toggle_btn_ordersnavbar' onClick={() => setToggleOrdersNavBar(!toggleOrdersNavbar)} >
+        <img src="arrow_right.svg" alt=""  style={toggleOrdersNavbar ? {
+                transition: "0.3s",
+                transform: "rotate(0)",
+            } : {
+                transition: "0.3s", 
+                transform: "rotate(180deg)",
+            }}/>
+      </div>
+      <a onClick={() => setSection("promociones")}>Promociones</a>
+      {/* <a exact to={`${url}/mcofertas`}>McOfertas</a> */}
+      <a onClick={() => setSection("mccombo")}>McCombos</a>
+      <a onClick={() => setSection("cajita feliz")}>Cajita Feliz</a>
+      {/* <a exact to={`${url}/cajita_feliz_mas_opciones`}>Cajita Feliz Mas Opciones</a> */}
+      <a onClick={() => setSection("sandwiches y snacks")}>Sandwiches y Snacks</a>
+      <a onClick={() => setSection("postres")}>Postres</a>
+      <a onClick={() => setSection("acompañamientos")}>Acompañamientos</a>
+      {/* <a exact to={`${url}/desayunos_meriendas`}>Desayunos & Meriendas</a> */}
+      {/* <a exact to={`${url}/ensaladas`}>Ensaladas</a> */}
+      <a onClick={() => setSection("bebidas frias y calientes")}>Bebidas frias y calientes</a>
 
-        
+
     </div>
   )
 }
