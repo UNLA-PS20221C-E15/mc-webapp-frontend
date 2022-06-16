@@ -1,83 +1,205 @@
 [
     {
-        "name": "Mc Pollo XL",
+        "id": 0,
+        "name": "Spicy Crispy Chicken Sandwich",
         "img": "../h.png",
+        "category": "sandwiches y snacks",
         "stock": 10,
         "price": 900.0,
         "discount": 0.20,
-        "enableDiscount": false,
-        "description": "Hamburguesa epica de 100% pollo, con queso cheddar y toda la cosa"
+        "enableDiscount": true,
+        "calories": "530 Cal",
+        "description": "With our Spicy Pepper Sauce topping the southern style fried chicken fillet on a toasted potato roll, this sandwich was made for those who like it crispy, juicy, tender and hot. The Spicy Crispy Chicken sandwich has 530 calories. Check out all the Crispy Chicken Sandwiches. Order one today in the McDonald’s app."
     },
     {
-        "name": "Mc Pollo XL",
-        "img": "../h.png",
+        "id": 1,
+        "name": "Big Mac",
+        "img": "../Big Mac.jpg",
+        "category": "sandwiches y snacks",
         "stock": 1,
         "price": 900.0,
         "discount": 0.20,
         "enableDiscount": false,
-        "description": "Hamburguesa epica de 100% pollo, con queso cheddar y toda la cosa"
+        "calories": "550 Cal",
+        "description": "Mouthwatering perfection starts with two 100% pure beef patties and Big Mac® sauce sandwiched between a sesame seed bun. It’s topped off with pickles, crisp shredded lettuce, finely chopped onion and American cheese for a 100% beef burger with a taste like no other. It contains no artificial flavors, preservatives or added colors from artificial sources.* Our pickle contains an artificial preservative, so skip it if you like. There are 550 calories in a Big Mac®. Order one today using the McDonald's App to Mobile Order & Pay! Download the McDonald’s app and earn points on every order with MyMcDonald's Rewards to redeem for a free Big Mac®.^"
     },
     {
-        "name": "Mc Pollo XL",
-        "img": "../h.png",
+        "id": 2,
+        "name": "Chicken McNuggets®",
+        "img": "../chicken nuggets.jpg",
         "stock": 10,
         "price": 900.0,
         "discount": 0.20,
         "enableDiscount": false,
-        "description": "Hamburguesa epica de 100% pollo, con queso cheddar y toda la cosa"
+        "calories": "170 Cal",
+        "description": "Our tender, juicy Chicken McNuggets® are made with all white meat chicken and no artificial colors, flavors or preservatives. There are 170 calories in a 4 piece Chicken McNuggets®. Pair them with your favorite dipping sauces when you Mobile Order & Pay!"
     },
     {
-        "name": "Mc Pollo XL",
-        "img": "../h.png",
+        "id": 3,
+        "name": "Iced Coffee",
+        "category": "bebidas frias y calientes",
+        "img": "../iceecoffee.jpg",
         "stock": 10,
         "price": 900.0,
         "discount": 0.20,
         "enableDiscount": false,
-        "description": "Hamburguesa epica de 100% pollo, con queso cheddar y toda la cosa"
+        "description": "McCafé Iced Coffee is refreshingly cool and made with 100% Arabica beans, cream and your choice of flavored coffee syrup – caramel, hazelnut, French vanilla and sugar-free French vanilla. There are 140 calories in a small McCafé Iced Coffee with whole milk. Order your Iced Coffee at McDonald's today using Mobile Order & Pay!"
     },
     {
-        "name": "Mc Pollo XL",
-        "img": "../h.png",
+        "id": 4,
+        "name": "World Famous Fries®",
+        "calories": "475 Cal",
+        "category": "acompañamientos",
+        "img": "../fries.jpg",
         "stock": 10,
         "price": 900.0,
         "discount": 0.20,
         "enableDiscount": false,
-        "description": "Hamburguesa epica de 100% pollo, con queso cheddar y toda la cosa"
+        "description": "McDonald's World Famous Fries® are made with premium potatoes such as the Russet Burbank and the Shepody. With 0g of trans fat per labeled serving, these epic fries are crispy and golden on the outside and fluffy on the inside. Best of all, you can get medium Fries for free every Friday with any $1 purchase, exclusively in the McDonald’s App. Grab our World Famous Fries® and pair with one of our classic McDonald’s Burgers today! There are 220 calories in a small McDonald's fries. Order your fries today with McDelivery® or get them with curbside pickup using Mobile Order & Pay!"
     },
     {
-        "name": "Mc Pollo XL",
-        "img": "../h.png",
+        "id": 5,
+        "name": "Hamburger Happy Meal®",
+        "category": "cajita feliz",
+        "calories": "475 Cal",
+        "img": "../cajitafeliz.jpg",
         "stock": 10,
         "price": 900.0,
         "discount": 0.20,
         "enableDiscount": true,
-        "description": "Hamburguesa epica de 100% pollo, con queso cheddar y toda la cosa"
+        "description": "McDonald's Hamburger Happy Meal includes a juicy hamburger with kid-sized World Famous Fries and apple slices. Then pick a kid’s drink: 1% Low Fat Milk Jug, reduced sugar* chocolate milk, DASANI® Water or Honest Kids® Appley Ever After® Organic Juice Drink. There are 475 calories in a Hamburger Happy Meal® with kids fries,1% milk, and apple slices. Order it today using the McDonald's App to Mobile Order & Pay!"
     },
     {
-        "name": "Mc Pollo XL",
-        "img": "../h.png",
+        "id": 6,
+        "name": "4 Piece Chicken McNuggets® Happy Meal",
+        "calories": "225 Cal",
+        "category": "cajita feliz",
+        "img": "../cajitafeliz.jpg",
         "stock": 10,
         "price": 900.0,
         "discount": 0.20,
         "enableDiscount": true,
-        "description": "Hamburguesa epica de 100% pollo, con queso cheddar y toda la cosa"
+        "description": "Grab a McDonald’s Happy Meal® and get four tender Chicken McNuggets® made with white meat with kid-sized World Famous Fries and a side of Apple Slices. Then pick a kids’ drink: 1% Low Fat Milk Jug, Reduced Sugar Low Fat Chocolate Milk Jug, DASANI® Water or Honest Kids® Appley Ever After® Organic Juice Drink plus, a fun toy completes every McDonald's kid's meal. There are 395 calories in a 4 piece Chicken McNuggets® Happy Meal with kids fries, 1% milk, and apple slices."
     },
     {
-        "name": "Mc Pollo XL",
-        "img": "../h.png",
+        "id": 7,
+        "name": "Coca-Cola®",
+        "calories": "150 Cal.",
+        "category": "bebidas frias y calientes",
+        "img": "../cocacola.jpg",
         "stock": 10,
         "price": 900.0,
         "discount": 0.10,
         "enableDiscount": true,
-        "description": "Hamburguesa epica de 100% pollo, con queso cheddar y toda la cosa"
+        "description": "Coca-Cola® is a refreshing McDonald's soda option that complements all of your menu favorites. Have you ever wondered, is Coke® at McDonald’s different? Visit our Why Does McDonalds Coca Cola Taste So Good FAQ to find out. Enjoy a refreshing Coke® at McDonald’s in extra small, small, medium and large for $1 on the $1 $2 $3 Dollar Menu."
     },
     {
-        "name": "Mc Pollo XL",
-        "img": "../h.png",
+        "id": 8,
+        "name": "Fanta® Orange",
+        "calories": "150 Cal.",
+        "category": "bebidas frias y calientes",
+        "img": "../fanta.jpg",
+        "stock": 10,
+        "price": 900.0,
+        "discount": 0.10,
+        "enableDiscount": true,
+        "description": "McDonald’s Fanta® Orange is a caffeine-free soft drink full of bubbly, refreshing orange flavor. There are 150 calories in a small Fanta® Orange. Fanta® Orange soda is part of McDonald’s $1 Any Size Soft Drinks on the $1 on our $1 $2 $3 Dollar Menu. Available in small, medium, and large fountain drink sizes. Get it today in the App with Mobile Order & Pay!"
+    },
+    {
+        "id": 9,
+        "name": "Dr Pepper®",
+        "calories": "40 Cal.",
+        "category": "bebidas frias y calientes",
+        "img": "../drpepper.jpg",
+        "stock": 10,
+        "price": 900.0,
+        "discount": 0.10,
+        "enableDiscount": true,
+        "description": "McDonald's serves Dr Pepper®, the classic and refreshing fountain drink with a unique blend of 23 flavors. Dr Pepper® pairs perfectly with any of your favorite menu items. There are 140 calories in a small Dr Pepper at McDonald's. Available in extra small, small, medium and large for $1 on our $1 $2 $3 Dollar Menu. Get it today in the App with Mobile Order & Pay!"
+    },
+    {
+        "id": 10,
+        "name": "Minute Maid® Premium Orange Juice",
+        "calories": "150 Cal",
+        "category": "bebidas frias y calientes",
+        "img": "../cepita.jpg",
         "stock": 10,
         "price": 900.0,
         "discount": 0.20,
         "enableDiscount": false,
-        "description": "Hamburguesa epica de 100% pollo, con queso cheddar y toda la cosa"
+        "description": "100% orange juice, packed with Vitamin C. Available in Small, Medium and Large."
+    },
+    {
+        "id": 11,
+        "name": "Cheeseburger Combo Meal",
+        "calories": "830 Cal",
+        "category": "mccombo",
+        "img": "../h-mcdonalds-2-Cheeseburger-Extra-Value-Meals.jpg",
+        "stock": 10,
+        "price": 900.0,
+        "discount": 0.20,
+        "enableDiscount": false,
+        "description": "McDonald's Cheeseburger Meal is 2 simple, satisfying classic 100% beef burgers, served with our World Famous Fries® and your choice of a medium McDonald’s soda or soft drink. There are 1,130 calories in a Cheeseburger Combo Meal with a medium Coca-Cola® and medium fries. Get a cheeseburger combo meal today with Mobile Order & Pay or McDelivery®!"
+    },
+    {
+        "id": 12,
+        "name": "Double Quarter Pounder®* with Cheese Meal",
+        "calories": "1260 Cal",
+        "category": "mccombo",
+        "img": "../h-mcdonalds-Double-Quarter-Pounder-with-Cheese-Extra-Value-Meals.jpg",
+        "stock": 10,
+        "price": 900.0,
+        "discount": 0.20,
+        "enableDiscount": false,
+        "description": "Get double the fresh beef** flavor with a Double Quarter Pounder® with Cheese made with fresh beef that’s cooked when you order. Served with our World Famous Fries® and your choice of an icy soft drink. There are 1,260 calories in a Double Quarter Pounder® with Cheese Meal with a Medium Dr Pepper and Medium French Fries from McDonald's. Order one today using Mobile Order & Pay and pick it up with curbside pickup or at the McDonald's drive thru. Looking for McDonald's delivery? Order your Double QPC® Meal with McDelivery® on Uber Eats or DoorDash!"
+    },
+    {
+        "id": 13,
+        "name": "DASANI® Water",
+        "calories": "0 Cal",
+        "category": "bebidas frias y calientes",
+        "img": "../agua.jpg",
+        "stock": 10,
+        "price": 900.0,
+        "discount": 0.20,
+        "enableDiscount": false,
+        "description": "DASANI is purified water enhanced with minerals for a pure, fresh taste."
+    },
+    {
+        "id": 14,
+        "name": "McFlurry® with OREO® cookies",
+        "calories": "510 Cal",
+        "category": "postres",
+        "img": "../t-oreo-mcflurry-snack_product-header-desktop.jpg",
+        "stock": 10,
+        "price": 900.0,
+        "discount": 0.20,
+        "enableDiscount": false,
+        "description": "The McDonald’s McFlurry® with OREO® Cookies is an popular combination of OREO® pieces and vanilla soft serve! Available in Regular Size and Snack Size on the McDonald's Desserts & Shakes menu."
+    },
+    {
+        "id": 15,
+        "name": "McFlurry® with M&M'S® Candies",
+        "calories": "640 Cal",
+        "category": "postres",
+        "img": "../t-mm-mcflurry-snack_product-header-desktop.jpg",
+        "stock": 10,
+        "price": 900.0,
+        "discount": 0.20,
+        "enableDiscount": false,
+        "description": "The McDonald’s M&M ® McFlurry® is a sweet, creamy M&M’S® dessert of vanilla soft serve with M&M’S® chocolate candies swirled in. Available in Regular Size and Snack Size. Check out all of McDonald's McFlurry® Flavors."
+    },
+    {
+        "id": 16,
+        "name": "Chocolatey Pretzel McFlurry®",
+        "calories": "670 Cal",
+        "category": "postres",
+        "img": "../Header_ChocolatePretzelMcFlurry_v8_832x472_product-header-desktop.jpg",
+        "stock": 10,
+        "price": 900.0,
+        "discount": 0.20,
+        "enableDiscount": false,
+        "description": "The McDonald’s regular size Chocolatey Pretzel McFlurry® features our creamy vanilla soft serve with caramel topping and chocolatey pretzel pieces blended throughout to satisfy your sweet and salty cravings. There are 670 calories in a regular size Chocolatey Pretzel McFlurry®. Check out all of the different McFlurry® flavors, desserts and shakes available!"
     }
+
 ]

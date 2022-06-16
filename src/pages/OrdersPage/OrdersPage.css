@@ -50,6 +50,7 @@
     transition: 0.3s;
     color: grey;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .main_orders_navbar a.active_order_navbar {

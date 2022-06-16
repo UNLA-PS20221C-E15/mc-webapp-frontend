@@ -7,7 +7,7 @@ import useItems from '../../store/UseItems';
 
 export default function LatShoppingCart() {
     const [toggle, setToggle] = useState(true);
-    const {shoppingCart,getTotalItems} = useItems();
+    const {shoppingCart,getTotalItems, getTotal} = useItems();
    
     return (
         <div className='root_latshoppingcart' style={toggle ? {
@@ -17,14 +17,18 @@ export default function LatShoppingCart() {
             transition:"0.4s",
             transform:"translateX(0%)"
         }}>
-            <div >
+            <div className='latshoppingcart_container'>
                 <div className='latshoppingcart_item_container'>
                     {shoppingCart && shoppingCart.map((i,k) => (
                         <ItemOnShoppingCart item={i} key={k}/>
                     ))}
                 </div>
-                <div>
-
+                <div className='latshoppingcart_box_detail'>
+                        <button>Comprar</button>
+                        <div>
+                            <p>Total</p>
+                            <p>${getTotal()}</p>
+                        </div>
                 </div>
             </div>
             <div className='toggle_btn_shoppingcart' 

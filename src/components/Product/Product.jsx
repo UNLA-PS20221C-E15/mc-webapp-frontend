@@ -1,9 +1,14 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import useItems from '../../store/UseItems';
+import useProducts from '../../store/UseProduct';
 import './Product.css'
 
-export default function Product({ img, price, name, discount, enableDiscount,stock }) {
+export default function Product({ img, price, name, discount, enableDiscount,stock,id }) {
+
+    const { selectItemToView } = useProducts();
     const {addItemToCart} = useItems();
+
     return (
         <div className='root_product' style={{
             backgroundImage: `url("${img}")`,
@@ -45,14 +50,15 @@ export default function Product({ img, price, name, discount, enableDiscount,sto
                 }
                 <p style={{
                     textDecoration: "none",
-                    fontSize: "15px",
+                    fontSize: "17px",
                     fontWeight: "600",
-                }}>${!enableDiscount ? price : price - price * discount}</p>
+                }}>${!enableDiscount ? price : price - price * discount}
+                </p>
 
             </div>
             <div className='product_box_btns_add_buy'>
-                <button>Comprar</button>
-                <button onClick={() => addItemToCart({ img, price, name, discount, enableDiscount, stock })} >Agregar</button>
+                <NavLink onClick={() => selectItemToView(id)} to={`/single_view_product/${name}`}>Comprar</NavLink>
+                <button onClick={() => addItemToCart({ img, price, name, discount, enableDiscount, stock, id })} >Agregar</button>
             </div>
 
         </div >

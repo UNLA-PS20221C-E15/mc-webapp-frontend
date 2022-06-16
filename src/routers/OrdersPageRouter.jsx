@@ -9,13 +9,15 @@ import '../pages/OrdersPage/OrdersPage.css'
 export default function OrdersPageRouter() {
     const { url } = useRouteMatch();
     const [toggleOrdersNavbar, setToggleOrdersNavBar] = useState();
+    const [section, setSection] = useState("all");
     return (
         <div className='root_orders_navbar'>
             
-            <OrdersNavBar toggleOrdersNavbar={toggleOrdersNavbar} setToggleOrdersNavBar={setToggleOrdersNavBar} url={url}/>
+            
+            <OrdersNavBar setSection={setSection} toggleOrdersNavbar={toggleOrdersNavbar} setToggleOrdersNavBar={setToggleOrdersNavBar} url={url}/>
             <Switch>
                 <Route exact path={`${url}/`} >
-                    <OrdersPage toggleOrdersNavbar={toggleOrdersNavbar} setToggleOrdersNavBar={setToggleOrdersNavBar} />
+                    <OrdersPage section={section} toggleOrdersNavbar={toggleOrdersNavbar} setToggleOrdersNavBar={setToggleOrdersNavBar} />
                 </Route>
                 <Route exact path={`${url}/:section`} >
                     <OrdersPage toggleOrdersNavbar={toggleOrdersNavbar} setToggleOrdersNavBar={setToggleOrdersNavBar} />

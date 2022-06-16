@@ -1,8 +1,8 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { a } from 'react-router-dom'
 
 
-export default function OrdersNavBar({ url, toggleOrdersNavbar, setToggleOrdersNavBar }) {
+export default function OrdersNavBar({ url, toggleOrdersNavbar, setToggleOrdersNavBar, setSection }) {
 
 
   return (
@@ -20,17 +20,17 @@ export default function OrdersNavBar({ url, toggleOrdersNavbar, setToggleOrdersN
                 transform: "rotate(180deg)",
             }}/>
       </div>
-      <NavLink activeClassName="active_order_navbar" exact to={`${url}/promociones`}>Promociones</NavLink>
-      <NavLink exact to={`${url}/mcofertas`}>McOfertas</NavLink>
-      <NavLink exact to={`${url}/mccombos`}>McCombos</NavLink>
-      <NavLink exact to={`${url}/cajita_feliz`}>Cajita Feliz</NavLink>
-      <NavLink exact to={`${url}/cajita_feliz_mas_opciones`}>Cajita Feliz Mas Opciones</NavLink>
-      <NavLink exact to={`${url}/sandwiches_snacks`}>Sandwiches y Snacks</NavLink>
-      <NavLink exact to={`${url}/postres`}>Postres</NavLink>
-      <NavLink exact to={`${url}/acompañamientos`}>Acompañamientos</NavLink>
-      <NavLink exact to={`${url}/desayunos_meriendas`}>Desayunos & Meriendas</NavLink>
-      <NavLink exact to={`${url}/ensaladas`}>Ensaladas</NavLink>
-      <NavLink exact to={`${url}/bebidas_frias_calientes`}>Bebidas frias y calientes</NavLink>
+      <a onClick={() => setSection("promociones")}>Promociones</a>
+      {/* <a exact to={`${url}/mcofertas`}>McOfertas</a> */}
+      <a onClick={() => setSection("mccombo")}>McCombos</a>
+      <a onClick={() => setSection("cajita feliz")}>Cajita Feliz</a>
+      {/* <a exact to={`${url}/cajita_feliz_mas_opciones`}>Cajita Feliz Mas Opciones</a> */}
+      <a onClick={() => setSection("sandwiches y snacks")}>Sandwiches y Snacks</a>
+      <a onClick={() => setSection("postres")}>Postres</a>
+      <a onClick={() => setSection("acompañamientos")}>Acompañamientos</a>
+      {/* <a exact to={`${url}/desayunos_meriendas`}>Desayunos & Meriendas</a> */}
+      {/* <a exact to={`${url}/ensaladas`}>Ensaladas</a> */}
+      <a onClick={() => setSection("bebidas frias y calientes")}>Bebidas frias y calientes</a>
 
 
     </div>
