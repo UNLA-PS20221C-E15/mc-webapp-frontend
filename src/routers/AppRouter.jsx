@@ -10,6 +10,9 @@ import TicketsPage from '../pages/TicketsPage'
 import OrdersPageRouter from './OrdersPageRouter'
 import CheckOutPage from '../pages/CheckOutPage/CheckOutPage'
 
+import LoginPage from '../components/login/LoginPage'
+import RegisterPage from '../components/register/RegisterPage'
+
 export default function AppRouter() {
 
   const VIEW_PRODUCT = () => {
@@ -28,6 +31,9 @@ export default function AppRouter() {
         <Route path='/orders' component={OrdersPageRouter} />
         {/* <Route path='/offers' component={OffersPage} /> */}
         {/* <Route path='/404' component={} /> */}
+        
+        <Route path='/login' component={LoginPage} />
+        <Route path='/register' component={RegisterPage} />
       </Switch>
     </BrowserRouter>
   )
